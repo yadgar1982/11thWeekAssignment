@@ -1,0 +1,139 @@
+body{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    background: linear-gradient(90deg, rgb(14, 20, 28) 0%, rgb(18, 18, 22) 35%, rgb(130, 202, 217) 100%);
+    color: rgb(135, 221, 74);
+
+}
+
+
+#board{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    cursor:progress;
+    position:relative;
+}
+
+h1{
+    color:currentColor;
+}
+
+.tile{
+    color:currentColor;
+    background-color:rgb(2, 31, 54);
+    font-size: 2em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border-color:transparent;
+}
+
+.border{
+    border:0.5em  transparent;
+
+}
+
+
+.strike{
+    position: absolute;
+    background-color: rgb(156, 205, 65);
+}
+
+.strike-row-1{
+    width:100%;
+    height:4px;
+    top:15%;
+}
+.strike-row-2{
+    width:100%;
+    height:4px;
+    top:48%;
+}
+
+.strike-row-3{
+    width:100%;
+    height:4px;
+    top:83%;
+}
+
+.strike-column-1{
+    height:100%;
+    width:4px;
+    left:15%;
+}
+
+.strike-column-2{
+    height:100%;
+    width:4px;
+    left:48%;
+}.strike-column-3{
+    height:100%;
+    width:4px;
+    left:83%;
+}
+
+.strike-diagonal-1{
+    width:90%;
+    height:4px;
+    top:50%;
+    left:5%;
+    transform: skewY(45deg);
+}
+.strike-diagonal-2{
+    width:90%;
+    height:4px;
+    top:50%;
+    left:5%;
+    transform: skewY(-45deg);
+}
+
+#game-over-area{
+    text-align: center;
+    /* border: rgb(143, 29, 223) 8px solid; */
+    padding: 50px;
+    width: 50%;
+    margin-top:50px;
+    border-radius: 8px;
+
+}
+
+h2{
+    color:rgb(145, 231, 17);
+    font-size:2em;
+    margin-top:0px;
+    flex: auto;
+}
+
+button{
+    background-color: lightgreen;
+    color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-display:light;
+    border:greenyellow 1px solid;
+    padding:10px;
+    font-size:1.5em;
+    border-radius: 7px;
+
+}
+
+.hidden{
+    display: non;
+}
+
+.visible{
+    display:block;
+}
+
+
+.x-hover:hover::after{
+    content:"X";
+    opacity:0.4;
+}
+.o-hover:hover::after{
+    content:"O";
+    opacity:0.4;
+}
+

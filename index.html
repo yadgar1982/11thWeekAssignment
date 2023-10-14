@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11Week Assignment Tic Tac Toe Game </title>
+    <br>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src></script>
+    <!-- css link -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+    <h2 alignment="center"><marquee direction="left" width="1200px">11th Week Assignment</marquee> <br><center>
+        Tic Tac Toe</h2><br>
+    <div id="board">
+        <div data-index="1" class=" tile border" ></div>
+        <div data-index="2" class=" tile border"></div>
+        <div data-index="3" class="tile border"></div>
+        <div data-index="4" class="tile border"></div>
+        <div data-index="5" class="tile border"></div>
+        <div data-index="6" class="tile border"></div>
+        <div data-index="7" class="tile border"></div>
+        <div data-index="8" class="tile border"></div>
+        <div data-index="9" class="tile border"></div>
+        <div id="strike" class="strike"></div>
+
+
+    </div>
+<br>
+
+    <div id="game-over-area" class="hidden">
+        
+        
+        <h2  id="game-over-text" class="alert alert-primary" style="flex" width="400px"></h2>
+        <button id="play-again" class="btn btn-primary ">Play Again</button>
+        
+    </div>
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
