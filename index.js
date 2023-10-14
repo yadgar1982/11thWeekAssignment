@@ -16,8 +16,8 @@ const playAgain = document.getElementById("play-again");
 playAgain.addEventListener("click", startNewGame);
 
 //sounds
-const gameOverSound = new Audio("sounds/gameOver.mp3");
-const clickSound= new Audio("sounds/click.mp3");
+const gameOverSound = new Audio("gameOver.mp3");
+const clickSound= new Audio("click.mp3");
 
 tiles.forEach((tile) => tile.addEventListener("click", tileClick));
 
